@@ -1,3 +1,3 @@
-# Create-config-file
+# Secret Writer
 
-creates a config file. True story.
+Writes the content of an AWS Secret Manager secret to the filesystem
