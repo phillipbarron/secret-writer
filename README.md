@@ -2,7 +2,7 @@
 
 Writes the content of an AWS Secret Manager secret to the filesystem.
 
-Secret writer can wrote the entire content of a  screct or a single value to the file system:
+Secret writer can write an entire screct or a single secret value to the filesystem:
 
 ## How can I use this in my project?
 
