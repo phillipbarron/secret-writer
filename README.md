@@ -6,6 +6,10 @@ Secret writer can write an entire screct or a single secret value to the filesys
 
 ## How can I use this in my project?
 
+```bash
+npm i secret-writer
+```
+
 ### write an entire secret
 
 ```javascript
