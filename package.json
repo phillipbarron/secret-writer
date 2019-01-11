@@ -1,15 +1,15 @@
 {
-  "name": "create-config-file",
+  "name": "secret-writer",
   "version": "1.0.0",
-  "description": "",
+  "description": "writes an AWS secret-manager secret to the file system",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --coverage"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@bbc/cps-mi6": "^0.1.14",
+    "@bbc/cps-mi6": "^1.0.0",
     "proxy-agent": "^3.0.3"
   },
   "devDependencies": {
