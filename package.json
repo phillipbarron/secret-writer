@@ -1,17 +1,35 @@
 {
-  "name": "secret-writer",
+  "name": "@bbc/cps-secret-writer",
   "version": "0.1.0",
   "description": "writes an AWS secret-manager secret to the file system",
   "main": "src/index.js",
   "scripts": {
-    "test": "jest --coverage"
+    "test": "jest --coverage",
+    "pre-commit": "lint-staged"
   },
-  "author": "",
+  "pre-commit": [
+    "pre-commit"
+  ],
+  "lint-staged": {
+    "*.js": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "author": "Phill Barron",
   "license": "ISC",
   "dependencies": {
     "@bbc/cps-mi6": "^1.0.0"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bbc/cps-secret-writer"
+  },
   "devDependencies": {
-    "jest": "^23.6.0"
+    "eslint-plugin-prettier": "^3.0.0",
+    "jest": "^23.5.0",
+    "lint-staged": "^7.3.0",
+    "pre-commit": "^1.2.2",
+    "prettier": "^1.15.3"
   }
 }
