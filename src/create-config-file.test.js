@@ -6,9 +6,9 @@ const fs = require("fs");
 const secretService = require("@bbc/cps-mi6");
 const secretWriter = require("./index");
 
-test.skip("writes whole secret to fileSystem", () => {
+test("writes whole secret to fileSystem", async () => {
   secretService.getSecrets = jest.fn(() => Promise.resolve({ foo: "bar" }));
-  secretWriter.writeSecretToFileSystem("foo", "bar");
+  await secretWriter.writeSecretToFileSystem("foo", "bar");
 
-  expect(fs.writeFile).toBeCalledWith(1);
+  expect(fs.writeFile).toBeCalledTimes(1);
 });
